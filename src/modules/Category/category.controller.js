@@ -142,7 +142,7 @@ export const getMyCategoriesWithTasks = async (req, res, next)=> {
     if (!category.length) {
         return next(new Error('No tasks found', { cause: 404 }))
     }
-    res.status(200).json({ 
+    res.status(200).json({
         msg: "Categories fetched successfully",
         statusCode: 200,
         category
