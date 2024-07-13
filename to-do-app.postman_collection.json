@@ -408,7 +408,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local}}/categories?size=3&sort=name asc",
+							"raw": "{{local}}/categories?size=20&sort=name asc",
 							"host": [
 								"{{local}}"
 							],
@@ -423,7 +423,7 @@
 								},
 								{
 									"key": "size",
-									"value": "3"
+									"value": "20"
 								},
 								{
 									"key": "sort",
@@ -448,14 +448,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local}}/categories/byId/6690176f16b9ffdc9a255967",
+							"raw": "{{local}}/categories/byId/66928254d719f0fddf30be8d",
 							"host": [
 								"{{local}}"
 							],
 							"path": [
 								"categories",
 								"byId",
-								"6690176f16b9ffdc9a255967"
+								"66928254d719f0fddf30be8d"
 							]
 						}
 					},
@@ -536,25 +536,24 @@
 							}
 						],
 						"url": {
-							"raw": "{{local}}/categories/tasks/66901bad57867d86d41784cd",
+							"raw": "{{local}}/categories/tasks/66928254d719f0fddf30be8d?size=10",
 							"host": [
 								"{{local}}"
 							],
 							"path": [
 								"categories",
 								"tasks",
-								"66901bad57867d86d41784cd"
+								"66928254d719f0fddf30be8d"
 							],
 							"query": [
 								{
-									"key": "size",
+									"key": "page",
 									"value": "1",
 									"disabled": true
 								},
 								{
-									"key": "page",
-									"value": "2",
-									"disabled": true
+									"key": "size",
+									"value": "10"
 								}
 							]
 						}
@@ -573,7 +572,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{local}}/categories/with-tasks",
+							"raw": "{{local}}/categories/with-tasks?size=5",
 							"host": [
 								"{{local}}"
 							],
@@ -589,13 +588,7 @@
 								},
 								{
 									"key": "size",
-									"value": "5",
-									"disabled": true
-								},
-								{
-									"key": "sortBy",
-									"value": "",
-									"disabled": true
+									"value": "5"
 								}
 							]
 						}
@@ -620,7 +613,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"taskType\": \"text\",\r\n    \"visibility\": \"private\",\r\n    \"deadline\": \"2024-07-23\",\r\n    \"title\": \"task-2\",\r\n    \"body\": \"do task-2 before the deadline\"\r\n}",
+							"raw": "{\r\n    \"taskType\": \"text\",\r\n    \"visibility\": \"private\",\r\n    \"deadline\": \"2024-07-23\",\r\n    \"title\": \"task-1\",\r\n    \"body\": \"do task-1 before the deadline\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -697,7 +690,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{local}}/task",
+							"raw": "{{local}}/task?size=10",
 							"host": [
 								"{{local}}"
 							],
@@ -712,8 +705,7 @@
 								},
 								{
 									"key": "size",
-									"value": "10",
-									"disabled": true
+									"value": "10"
 								},
 								{
 									"key": "visibility[eq]",
@@ -761,7 +753,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{local}}/task/all",
+							"raw": "{{local}}/task/all?size=10",
 							"host": [
 								"{{local}}"
 							],
@@ -777,8 +769,7 @@
 								},
 								{
 									"key": "size",
-									"value": "20",
-									"disabled": true
+									"value": "10"
 								}
 							]
 						}
